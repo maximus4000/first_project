@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html', path_css="/static/css/style.css", path_img="https://re-feniks.ru/netcat_files/36/50/kak_izbavit_muzha_ot_igrovoj_zavisimosti_0.png")
 
 @app.route('/calc')
 def calc():
